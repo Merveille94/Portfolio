@@ -6,7 +6,7 @@ import { SiCplusplus } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 
-// Define types for projects
+// Define types for project
 interface GithubProject {
     id: string;
     title: string;
