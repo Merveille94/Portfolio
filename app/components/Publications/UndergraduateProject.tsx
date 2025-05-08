@@ -3,9 +3,29 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaGithub, FaChevronRight, FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
-const UndergraduateProject = () => {
-    const [expandedSection, setExpandedSection] = useState("overview");
+// Define TypeScript interfaces
+interface ProjectSection {
+    id: string;
+    title: string;
+    content: string;
+    image: string;
+}
+
+interface ProjectDetailsType {
+    title: string;
+    subtitle: string;
+    overview: string;
+    duration: string;
+    technologies: string[];
+    team: string[];
+    github: string;
+    sections: ProjectSection[];
+}
+
+const UndergraduateProject: React.FC = () => {
+    const [expandedSection, setExpandedSection] = useState<string | null>("overview");
 
     // Animation variants
     const containerVariants = {
@@ -28,7 +48,7 @@ const UndergraduateProject = () => {
     };
 
     // Project details
-    const projectDetails = {
+    const projectDetails: ProjectDetailsType = {
         title: "Smart Traffic Control System",
         subtitle: "AI-Based Traffic Optimization Research Project",
         overview: "This undergraduate research project focused on developing an intelligent traffic control system that utilizes computer vision and machine learning to optimize traffic light timing based on real-time traffic conditions. The system was designed to reduce congestion, minimize wait times, and improve overall traffic flow in urban environments.",
@@ -40,7 +60,7 @@ const UndergraduateProject = () => {
             {
                 id: "overview",
                 title: "Project Overview",
-                content: "The Smart Traffic Control System is an innovative solution designed to address the growing problem of traffic congestion in urban areas. Traditional traffic light systems operate on fixed timing patterns regardless of actual traffic conditions, leading to inefficient traffic flow. Our system utilizes computer vision and machine learning algorithms to detect and analyze traffic density in real-time, allowing for dynamic adjustment of traffic signal timing to optimize vehicle movement through intersections.",
+                content: "The Smart Traffic Control System is an innovative designed to address the growing problem of traffic congestion in urban areas. Traditional traffic light systems operate on fixed timing patterns regardless of actual traffic conditions, leading to inefficient traffic flow. Our system utilizes computer vision and machine learning algorithms to detect and analyze traffic density in real-time, allowing for dynamic adjustment of traffic signal timing to optimize vehicle movement through intersections.",
                 image: "/api/placeholder/800/400"
             },
             {
@@ -83,14 +103,14 @@ const UndergraduateProject = () => {
     };
 
     // Toggle section expansion
-    const toggleSection = (id) => {
+    const toggleSection = (id: string) => {
         setExpandedSection(expandedSection === id ? null : id);
     };
 
     return (
-        <div className="max-w-6xl mx-auto px-4 pt-30 pb-12 bg-white">
+        <div className="max-w-6xl mx-auto px-4 pt-20 pb-12 bg-white">
             {/* Back button */}
-            <Link href="/pages/publications">
+            <Link href="/pages/publications" className="inline-block">
                 <motion.div
                     whileHover={{ x: -5 }}
                     className="inline-flex items-center space-x-2 text-blue-600 mb-8"
@@ -139,8 +159,8 @@ const UndergraduateProject = () => {
                     <div className="flex flex-wrap gap-2">
                         {projectDetails.technologies.map((tech, index) => (
                             <span key={index} className="text-xs text-gray-600 px-2 py-1 bg-gray-100 rounded-full">
-                {tech}
-              </span>
+                                {tech}
+                            </span>
                         ))}
                     </div>
                 </motion.div>
@@ -198,11 +218,13 @@ const UndergraduateProject = () => {
                                 <div>
                                     <p className="text-gray-600 leading-relaxed">{section.content}</p>
                                 </div>
-                                <div>
-                                    <img
+                                <div className="relative h-64">
+                                    <Image
                                         src={section.image}
                                         alt={section.title}
-                                        className="w-full h-64 object-cover rounded-md"
+                                        fill
+                                        className="object-cover rounded-md"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                     />
                                 </div>
                             </div>
@@ -223,7 +245,7 @@ const UndergraduateProject = () => {
                     This undergraduate project laid the foundation for my interest in applying AI and computer vision to real-world problems.
                     The experience gained from developing this system continues to influence my approach to software development and research.
                 </p>
-                <Link href="/contact">
+                <Link href="/pages/contact" className="inline-block">
                     <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
