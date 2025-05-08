@@ -1,22 +1,42 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaCalendarAlt, FaUser, FaArrowRight, FaHeart, FaRegHeart, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { MdComment } from "react-icons/md";
 
-const NewsPage = () => {
+// Define TypeScript interfaces
+interface NewsArticle {
+    id: number;
+    title: string;
+    excerpt: string;
+    content: string;
+    image: string;
+    date: string;
+    author: string;
+    category: string;
+}
+
+interface Comment {
+    id: number;
+    name: string;
+    text: string;
+    date: string;
+}
+
+const NewsPage: React.FC = () => {
     // State management
-    const [currentPage, setCurrentPage] = useState(1);
-    const [selectedArticle, setSelectedArticle] = useState(null);
-    const [comments, setComments] = useState({});
-    const [commentInput, setCommentInput] = useState("");
-    const [userName, setUserName] = useState("");
-    const [likes, setLikes] = useState({});
+    const [currentPage, setCurrentPage] = useState<number>(1);
+    const [selectedArticle, setSelectedArticle] = useState<NewsArticle | null>(null);
+    const [comments, setComments] = useState<Record<number, Comment[]>>({});
+    const [commentInput, setCommentInput] = useState<string>("");
+    const [userName, setUserName] = useState<string>("");
+    const [likes, setLikes] = useState<Record<number, boolean>>({});
 
     const postsPerPage = 6;
 
     // Sample news articles data
-    const newsArticles = [
+    const newsArticles: NewsArticle[] = [
         {
             id: 1,
             title: "Launched New Machine Learning Algorithm",
@@ -224,13 +244,13 @@ The next phase of development will focus on expanding the library of procedures 
     const currentPosts = newsArticles.slice(indexOfFirstPost, indexOfLastPost);
 
     // Handle page change
-    const paginate = (pageNumber) => {
+    const paginate = (pageNumber: number) => {
         setCurrentPage(pageNumber);
         window.scrollTo(0, 0);
     };
 
     // Handle selecting an article to view in detail
-    const viewArticle = (article) => {
+    const viewArticle = (article: NewsArticle) => {
         setSelectedArticle(article);
         window.scrollTo(0, 0);
     };
@@ -241,7 +261,7 @@ The next phase of development will focus on expanding the library of procedures 
     };
 
     // Handle liking an article
-    const toggleLike = (articleId) => {
+    const toggleLike = (articleId: number) => {
         setLikes(prevLikes => ({
             ...prevLikes,
             [articleId]: !prevLikes[articleId]
@@ -249,9 +269,9 @@ The next phase of development will focus on expanding the library of procedures 
     };
 
     // Handle submitting a comment
-    const submitComment = (articleId) => {
+    const submitComment = (articleId: number) => {
         if (commentInput.trim() && userName.trim()) {
-            const newComment = {
+            const newComment: Comment = {
                 id: Date.now(),
                 name: userName,
                 text: commentInput,
@@ -335,14 +355,15 @@ The next phase of development will focus on expanding the library of procedures 
 
                         {/* Featured image */}
                         <motion.div
-                            className="mb-8"
+                            className="mb-8 relative h-96"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
                         >
-                            <img
+                            <Image
                                 src={selectedArticle.image}
                                 alt={selectedArticle.title}
-                                className="w-full h-96 object-cover rounded-lg shadow-md"
+                                fill
+                                className="object-cover rounded-lg shadow-md"
                             />
                         </motion.div>
 
@@ -384,8 +405,8 @@ The next phase of development will focus on expanding the library of procedures 
                             <div className="flex items-center space-x-2 bg-gray-50 px-4 py-2 rounded-full text-gray-500">
                                 <MdComment />
                                 <span>
-                  {comments[selectedArticle.id]?.length || 0} Comment{(comments[selectedArticle.id]?.length || 0) !== 1 ? 's' : ''}
-                </span>
+                                    {comments[selectedArticle.id]?.length || 0} Comment{(comments[selectedArticle.id]?.length || 0) !== 1 ? 's' : ''}
+                                </span>
                             </div>
                         </motion.div>
 
@@ -487,19 +508,20 @@ The next phase of development will focus on expanding the library of procedures 
                                     whileHover={{ y: -5 }}
                                     className="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
                                 >
-                                    <div className="h-48 overflow-hidden">
-                                        <img
+                                    <div className="h-48 relative overflow-hidden">
+                                        <Image
                                             src={article.image}
                                             alt={article.title}
-                                            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                            fill
+                                            className="object-cover transition-transform duration-300 hover:scale-105"
                                         />
                                     </div>
 
                                     <div className="p-6">
                                         <div className="flex justify-between items-center mb-3">
-                      <span className="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded-full">
-                        {article.category}
-                      </span>
+                                            <span className="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded-full">
+                                                {article.category}
+                                            </span>
                                             <span className="text-gray-500 text-sm">{article.date}</span>
                                         </div>
 

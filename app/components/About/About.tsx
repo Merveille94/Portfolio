@@ -65,7 +65,7 @@ const About = () => {
                                 Physics graduate with 2 years of experience at the Nuclear Regulatory Authority. Passionate about sustainable energy solutions and programming.
                             </p>
                             <p>
-                                Currently preparing for a Master's program in Energy Engineering in Germany to contribute to next-generation energy systems.
+                                Currently preparing for a Master programme in Energy Engineering in Germany to contribute to next-generation energy systems.
                             </p>
                             <p>
                                 My work bridges theoretical physics and real-world regulatory practices, backed by a strong grasp of front-end development and C++ programming.
@@ -73,7 +73,7 @@ const About = () => {
 
                             <div className="pt-4">
                                 <a
-                                    href="/your-cv.pdf"
+                                    href="#"
                                     target="_blank"
                                     className="px-6 py-2 border-2 border-black font-medium hover:bg-black hover:text-white transition-all duration-300 inline-flex items-center"
                                 >
