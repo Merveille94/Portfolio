@@ -1,12 +1,41 @@
 "use client"
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaCode, FaExternalLinkAlt, FaPython, FaReact } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaPython, FaReact } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
+import Image from "next/image";
+import Link from "next/link";
 
-const PublicationsPage = () => {
+// Define types for projects
+interface GithubProject {
+    id: string;
+    title: string;
+    description: string;
+    tags: string[];
+    icon: React.ReactNode;
+    link: string;
+}
+
+interface WebProject {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    tags: string[];
+    link: string;
+}
+
+interface UndergraduateProject {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    link: string;
+}
+
+const PublicationsPage: React.FC = () => {
     // State to track which project is being previewed (if any)
-    const [activePreview, setActivePreview] = useState(null);
+    const [activePreview, setActivePreview] = useState<string | null>(null);
 
     // Animation variants
     const containerVariants = {
@@ -29,7 +58,7 @@ const PublicationsPage = () => {
     };
 
     // GitHub projects data
-    const githubProjects = [
+    const githubProjects: GithubProject[] = [
         {
             id: "github1",
             title: "Algorithm Visualizer",
@@ -57,7 +86,7 @@ const PublicationsPage = () => {
     ];
 
     // Web development projects
-    const webProjects = [
+    const webProjects: WebProject[] = [
         {
             id: "web1",
             title: "E-commerce Dashboard",
@@ -85,7 +114,7 @@ const PublicationsPage = () => {
     ];
 
     // undergraduate project
-    const undergraduateProject = {
+    const undergraduateProject: UndergraduateProject = {
         id: "undergrad",
         title: "Smart Traffic Control System",
         description: "Developed an AI-based traffic control system that optimizes signal timing based on real-time traffic density to reduce congestion and improve flow.",
@@ -94,7 +123,7 @@ const PublicationsPage = () => {
     };
 
     // Function to handle preview toggling
-    const togglePreview = (id) => {
+    const togglePreview = (id: string) => {
         if (activePreview === id) {
             setActivePreview(null);
         } else {
@@ -133,23 +162,28 @@ const PublicationsPage = () => {
                         transition={{ duration: 0.3 }}
                         className="relative"
                     >
-                        <img
-                            src={undergraduateProject.image}
-                            alt={undergraduateProject.title}
-                            className="w-full h-64 object-cover"
-                        />
+                        <div className="w-full h-64 relative">
+                            <Image
+                                src={undergraduateProject.image}
+                                alt={undergraduateProject.title}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
                             <h3 className="text-2xl font-bold text-white mb-2">{undergraduateProject.title}</h3>
                             <p className="text-white/90 mb-4">{undergraduateProject.description}</p>
-                            <motion.a
-                                href={undergraduateProject.link}
+                            <motion.div
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="bg-blue-600 text-white py-2 px-4 rounded-md inline-flex items-center space-x-2 self-start"
+                                className="self-start"
                             >
-                                <span>View Detailed Process</span>
-                                <FaExternalLinkAlt size={14} />
-                            </motion.a>
+                                <Link href={undergraduateProject.link} className="bg-blue-600 text-white py-2 px-4 rounded-md inline-flex items-center space-x-2">
+                                    <span>View Detailed Process</span>
+                                    <FaExternalLinkAlt size={14} />
+                                </Link>
+                            </motion.div>
                         </div>
                     </motion.div>
                 </motion.div>
@@ -186,27 +220,30 @@ const PublicationsPage = () => {
                                         {project.icon}
                                     </div>
                                     <span className="text-xs font-medium px-2 py-1 bg-blue-100 text-blue-700 rounded-full">
-                    {project.tags[0]}
-                  </span>
+                                        {project.tags[0]}
+                                    </span>
                                 </div>
                                 <h3 className="text-lg font-bold text-gray-800 mb-2">{project.title}</h3>
                                 <p className="text-gray-600 text-sm mb-4">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.slice(1).map((tag, index) => (
                                         <span key={index} className="text-xs text-gray-500 px-2 py-1 bg-gray-100 rounded-full">
-                      {tag}
-                    </span>
+                                            {tag}
+                                        </span>
                                     ))}
                                 </div>
-                                <motion.a
-                                    href={project.link}
+                                <motion.div
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="flex items-center justify-center space-x-2 w-full py-2 px-4 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors text-sm font-medium"
                                 >
-                                    <FaGithub size={16} />
-                                    <span>View Repository</span>
-                                </motion.a>
+                                    <Link
+                                        href={project.link}
+                                        className="flex items-center justify-center space-x-2 w-full py-2 px-4 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors text-sm font-medium"
+                                    >
+                                        <FaGithub size={16} />
+                                        <span>View Repository</span>
+                                    </Link>
+                                </motion.div>
                             </div>
                         </motion.div>
                     ))}
@@ -234,8 +271,7 @@ const PublicationsPage = () => {
                         <motion.div
                             key={project.id}
                             variants={itemVariants}
-                            className="flex flex-col md:flex-row gap-8 items-center"
-                            style={{ flexDirection: index % 2 === 1 ? 'row-reverse' : '' }}
+                            className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 items-center`}
                         >
                             {/* Project Image */}
                             <motion.div
@@ -244,11 +280,15 @@ const PublicationsPage = () => {
                                 onClick={() => togglePreview(project.id)}
                             >
                                 <div className="relative overflow-hidden rounded-lg shadow-md cursor-pointer">
-                                    <img
-                                        src={project.image}
-                                        alt={project.title}
-                                        className="w-full h-64 object-cover"
-                                    />
+                                    <div className="w-full h-64 relative">
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        />
+                                    </div>
 
                                     {/* Preview overlay */}
                                     <motion.div
@@ -260,16 +300,19 @@ const PublicationsPage = () => {
                                         <div className="text-white text-center p-6">
                                             <h4 className="text-xl font-bold mb-2">{project.title}</h4>
                                             <p className="mb-4">{project.description}</p>
-                                            <motion.a
-                                                href={project.link}
+                                            <motion.div
                                                 whileHover={{ scale: 1.05 }}
                                                 whileTap={{ scale: 0.95 }}
-                                                className="inline-flex items-center space-x-2 bg-white text-gray-800 py-2 px-4 rounded-md text-sm"
                                                 onClick={(e) => e.stopPropagation()}
                                             >
-                                                <FaExternalLinkAlt size={14} />
-                                                <span>Visit Site</span>
-                                            </motion.a>
+                                                <Link
+                                                    href={project.link}
+                                                    className="inline-flex items-center space-x-2 bg-white text-gray-800 py-2 px-4 rounded-md text-sm"
+                                                >
+                                                    <FaExternalLinkAlt size={14} />
+                                                    <span>Visit Site</span>
+                                                </Link>
+                                            </motion.div>
                                         </div>
                                     </motion.div>
                                 </div>
@@ -282,19 +325,22 @@ const PublicationsPage = () => {
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag, idx) => (
                                         <span key={idx} className="text-xs font-medium px-3 py-1 bg-gray-100 text-gray-600 rounded-full">
-                      {tag}
-                    </span>
+                                            {tag}
+                                        </span>
                                     ))}
                                 </div>
-                                <motion.a
-                                    href={project.link}
+                                <motion.div
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="inline-flex items-center space-x-2 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm"
                                 >
-                                    <FaExternalLinkAlt size={14} />
-                                    <span>Visit Project</span>
-                                </motion.a>
+                                    <Link
+                                        href={project.link}
+                                        className="inline-flex items-center space-x-2 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors text-sm"
+                                    >
+                                        <FaExternalLinkAlt size={14} />
+                                        <span>Visit Project</span>
+                                    </Link>
+                                </motion.div>
                             </div>
                         </motion.div>
                     ))}
