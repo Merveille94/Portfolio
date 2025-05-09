@@ -3,10 +3,10 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-
 const HeroSection = () => {
     return (
         <section className="container mx-auto min-h-screen relative flex flex-col justify-center px-4 md:px-6 ">
+
             {/* Particle Background */}
             <ParticleBackground />
 

@@ -6,6 +6,7 @@ import Footer from "@/app/components/Generals/Footer";
 export const metadata: Metadata = {
   title: "Emanuele Merveille .G",
   description: "Website of Emanuele Merveille Guehi",
+    icons: "/icon.png"
 };
 
 export default function RootLayout({
