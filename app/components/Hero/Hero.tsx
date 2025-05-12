@@ -129,10 +129,10 @@ const HeroSection = (): JSX.Element => {
                         transition={{ duration: 0.7, delay: 0.6 }}
                     >
                         <a
-                            href="#research"
+                            href="/pages/about"
                             className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-medium rounded-md hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg shadow-blue-500/20 flex items-center gap-2 group"
                         >
-                            <span>Research Portfolio</span>
+                            <span>View more</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5 transform group-hover:translate-x-1 transition-transform"
@@ -143,7 +143,7 @@ const HeroSection = (): JSX.Element => {
                             </svg>
                         </a>
                         <a
-                            href="#publications"
+                            href="/pages/publications"
                             className="px-8 py-3 bg-transparent border border-blue-500 text-white font-medium rounded-md hover:bg-white/10 transition-all duration-300"
                         >
                             Publications
