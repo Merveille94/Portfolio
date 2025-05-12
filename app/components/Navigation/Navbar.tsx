@@ -19,11 +19,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white py-2' : 'bg-transparent py-4'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-200/20 py-2' : 'bg-transparent py-4 '}`}>
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center">
+                    <Link href="/" className="flex items-center pb-8">
                         <div className="relative h-16 w-48 sm:h-20 sm:w-56 md:h-16 md:w-64">
                             <Image
                                 src="/a2.png"
@@ -37,7 +37,7 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Nav */}
-                    <div className="hidden md:flex items-center space-x-6">
+                    <div className="hidden md:flex items-center space-x-6 ">
                         <NavLink href="/">Home</NavLink>
                         <NavLink href="/pages/about">About</NavLink>
                         <NavLink href="/pages/news">News</NavLink>
@@ -72,7 +72,7 @@ const Navbar = () => {
 };
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-    <Link href={href} className="text-black font-medium relative group">
+    <Link href={href} className="text-gray-400 font-medium relative group">
         {children}
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
     </Link>
