@@ -168,73 +168,43 @@ const About = () => {
                         className="md:col-span-7 lg:col-span-8"
                     >
                         <div className="space-y-6">
-                            {/* Academic profile display */}
+                            {/* Bio section */}
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="text-5xl font-bold text-blue-500 opacity-50 font-mono">01</div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white">Academic Profile</h3>
+                                    <h3 className="text-xl font-bold text-white">About Me</h3>
                                     <div className="h-px w-20 bg-blue-600 mt-1"></div>
                                 </div>
                             </div>
 
                             <p className="text-gray-300 leading-relaxed">
-                                Physics graduate with a focus on nuclear physics,
-                                computational methods, and energy systems.
-                                I aim to bridge theory and practice, especially in nuclear processes
-                                and sustainable energy modeling.
+                                Born in Italy and raised in Ivory Coast from the age of 6, I moved to Ghana in 2011 due to the
+                                civil war crisis. My journey has shaped my resilience and global perspective. I completed my
+                                B.Sc. in Physics at Kwame Nkrumah University of Science and Technology (KNUST) in Ghana,
+                                specializing in Biomedical Physics with a focus on nuclear applications.
                             </p>
 
                             <div className="bg-blue-900/20 border-l-2 border-blue-600 p-4 my-4">
                                 <p className="text-gray-300 italic">
-                                    &#34;Aiming for a masters degree focused on the practical application of physics and sustainable
-                                    energy systems, with an interest in using computational models to optimize renewable technologies.&#34;
+                                    &#34;As a passionate physicist and programmer, I bridge the gap between theoretical concepts and
+                                    practical applications, with particular interests in nuclear security, radiation protection,
+                                    and sustainable energy systems.&#34;
                                 </p>
                             </div>
 
                             <p className="text-gray-300 leading-relaxed">
-                                Currently preparing for advanced studies in Applied Physics or Energy Engineering, with a focus on computational
-                                optimization of grid systems and energy storage. I plan to contribute to the program through my programming skills
-                                in C++ and modern web development frameworks.
+                                During my undergraduate studies, I designed and simulated a Departmental Liquid Nitrogen Plant using
+                                locally available materials, creating 3D models and using MATLAB for thermodynamic simulations. This
+                                project ignited my interest in cryogenics and engineering design. Following graduation, I worked at
+                                Ghana Nuclear Regulatory Authority as an Assistant Nuclear Security Officer, where I collaborated
+                                on designing a scintillation detector for nuclear and radioactive material detection.
                             </p>
 
-                            {/* Key focus areas */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-                                <div className="bg-blue-950/30 p-4 backdrop-blur-sm">
-                                    <h4 className="text-blue-400 font-medium mb-2">Research Focus</h4>
-                                    <ul className="text-gray-300 space-y-1">
-                                        <li className="flex items-center gap-2">
-                                            <div className="w-1 h-1 bg-blue-500"></div>
-                                            <span>Biophysics / Atomic Physics </span>
-                                        </li>
-                                        <li className="flex items-center gap-2">
-                                            <div className="w-1 h-1 bg-blue-500"></div>
-                                            <span>Nuclear Safety, Security and Safeguards</span>
-                                        </li>
-                                        <li className="flex items-center gap-2">
-                                            <div className="w-1 h-1 bg-blue-500"></div>
-                                            <span>Renewable Energy Integration</span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className="bg-blue-950/30 p-4 backdrop-blur-sm">
-                                    <h4 className="text-blue-400 font-medium mb-2">Technical Skills</h4>
-                                    <ul className="text-gray-300 space-y-1">
-                                        <li className="flex items-center gap-2">
-                                            <div className="w-1 h-1 bg-blue-500"></div>
-                                            <span>C++ Algorithm Development</span>
-                                        </li>
-                                        <li className="flex items-center gap-2">
-                                            <div className="w-1 h-1 bg-blue-500"></div>
-                                            <span>React & Next.js Frameworks</span>
-                                        </li>
-                                        <li className="flex items-center gap-2">
-                                            <div className="w-1 h-1 bg-blue-500"></div>
-                                            <span>3d Modelling / CAD </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <p className="text-gray-300 leading-relaxed">
+                                Currently in Germany pursuing language studies with a DAAD Leadership for Africa Scholarship,
+                                I am preparing for a Masters program in Applied Physics or Energy Engineering. I aim to contribute
+                                to research and development in nuclear safety, sustainable energy, and computational applications.
+                            </p>
 
                             <div className="pt-6 flex flex-wrap gap-4">
                                 <motion.a
@@ -251,12 +221,12 @@ const About = () => {
                                 </motion.a>
 
                                 <motion.a
-                                    href="/pages/publications"
+                                    href="/projects"
                                     className="px-8 py-3 border border-blue-500 text-white font-medium hover:bg-blue-900/30 transition-all duration-300 inline-flex items-center gap-2 group"
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.98 }}
                                 >
-                                    <span>Research Papers</span>
+                                    <span>View Projects</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                     </svg>
@@ -266,7 +236,7 @@ const About = () => {
                     </motion.div>
                 </div>
 
-                {/* Academic journey timeline */}
+                {/* Skills Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -277,7 +247,213 @@ const About = () => {
                     <div className="flex items-center gap-3 mb-8">
                         <div className="text-5xl font-bold text-blue-500 opacity-50 font-mono">02</div>
                         <div>
-                            <h3 className="text-xl font-bold text-white">Academic Journey</h3>
+                            <h3 className="text-xl font-bold text-white">Skills & Expertise</h3>
+                            <div className="h-px w-20 bg-blue-600 mt-1"></div>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {/* Technical Skills */}
+                        <div className="bg-blue-950/30 p-6 backdrop-blur-sm border-l border-blue-500">
+                            <h4 className="text-lg font-medium text-blue-400 mb-4">Technical Skills</h4>
+                            <div className="space-y-4">
+                                <div>
+                                    <h5 className="text-white font-medium mb-2">Programming Languages</h5>
+                                    <div className="flex flex-wrap gap-2">
+                                        {['C++', 'Python', 'JavaScript', 'HTML', 'CSS'].map((skill, index) => (
+                                            <span key={index} className="bg-blue-900/40 px-3 py-1 text-sm text-gray-300">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 className="text-white font-medium mb-2">Frameworks & Tools</h5>
+                                    <div className="flex flex-wrap gap-2">
+                                        {['React.js', 'Next.js', 'Tailwind CSS', 'GitHub', 'Vercel'].map((skill, index) => (
+                                            <span key={index} className="bg-blue-900/40 px-3 py-1 text-sm text-gray-300">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h5 className="text-white font-medium mb-2">Design & Modeling</h5>
+                                    <div className="flex flex-wrap gap-2">
+                                        {['Blender 3D', 'SolidWorks', 'MATLAB', 'Adobe Suite'].map((skill, index) => (
+                                            <span key={index} className="bg-blue-900/40 px-3 py-1 text-sm text-gray-300">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Research Interests */}
+                        <div className="bg-blue-950/30 p-6 backdrop-blur-sm border-l border-blue-500">
+                            <h4 className="text-lg font-medium text-blue-400 mb-4">Research Interests</h4>
+                            <ul className="space-y-3">
+                                <li className="flex items-start gap-3">
+                                    <div className="min-w-4 h-4 mt-1 rounded-full bg-blue-500 opacity-70"></div>
+                                    <span className="text-gray-300">Nuclear Security & Radiation Protection</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="min-w-4 h-4 mt-1 rounded-full bg-blue-500 opacity-70"></div>
+                                    <span className="text-gray-300">Computational Methods & Engineering</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="min-w-4 h-4 mt-1 rounded-full bg-blue-500 opacity-70"></div>
+                                    <span className="text-gray-300">Renewable & Smart Energy Systems</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="min-w-4 h-4 mt-1 rounded-full bg-blue-500 opacity-70"></div>
+                                    <span className="text-gray-300">Modeling & Simulation in Physics</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="min-w-4 h-4 mt-1 rounded-full bg-blue-500 opacity-70"></div>
+                                    <span className="text-gray-300">Sustainable Engineering Solutions</span>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="min-w-4 h-4 mt-1 rounded-full bg-blue-500 opacity-70"></div>
+                                    <span className="text-gray-300">Energy Storage & System Optimization</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Languages & Soft Skills */}
+                        <div className="bg-blue-950/30 p-6 backdrop-blur-sm border-l border-blue-500">
+                            <h4 className="text-lg font-medium text-blue-400 mb-4">Languages & Soft Skills</h4>
+
+                            <div className="mb-6">
+                                <h5 className="text-white font-medium mb-3">Languages</h5>
+                                <div className="space-y-3">
+                                    <div>
+                                        <div className="flex justify-between mb-1">
+                                            <span className="text-gray-300">French (Native)</span>
+                                            <span className="text-blue-400 text-sm">100%</span>
+                                        </div>
+                                        <div className="h-1.5 bg-gray-700 rounded-full overflow-hidden">
+                                            <div className="h-full bg-gradient-to-r from-blue-400 to-blue-600 w-full"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-between mb-1">
+                                            <span className="text-gray-300">English (Professional)</span>
+                                            <span className="text-blue-400 text-sm">100%</span>
+                                        </div>
+                                        <div className="h-1.5 bg-gray-700 rounded-full overflow-hidden">
+                                            <div className="h-full bg-gradient-to-r from-blue-400 to-blue-600 w-full"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-between mb-1">
+                                            <span className="text-gray-300">German (Elementary)</span>
+                                            <span className="text-blue-400 text-sm">25%</span>
+                                        </div>
+                                        <div className="h-1.5 bg-gray-700 rounded-full overflow-hidden">
+                                            <div className="h-full bg-gradient-to-r from-blue-400 to-blue-600 w-1/4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className="text-white font-medium mb-2">Soft Skills</h5>
+                                <div className="flex flex-wrap gap-2">
+                                    {['Project Management', 'Team Collaboration', 'Problem Solving', 'Adaptability', 'Leadership', 'Cross-cultural Communication'].map((skill, index) => (
+                                        <span key={index} className="bg-blue-900/40 px-3 py-1 text-sm text-gray-300">
+                                            {skill}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+
+                {/* Professional Experience */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7, delay: 0.7 }}
+                    className="mt-24"
+                >
+                    <div className="flex items-center gap-3 mb-8">
+                        <div className="text-5xl font-bold text-blue-500 opacity-50 font-mono">03</div>
+                        <div>
+                            <h3 className="text-xl font-bold text-white">Professional Experience</h3>
+                            <div className="h-px w-20 bg-blue-600 mt-1"></div>
+                        </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        {/* NRA Experience */}
+                        <div className="bg-gray-900/50 p-6 border-l-2 border-blue-500">
+                            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+                                <h4 className="text-lg font-medium text-white">Assistant Nuclear Security Officer</h4>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-blue-400 text-sm bg-blue-900/30 px-3 py-1">Aug 2021 - Nov 2023</span>
+                                </div>
+                            </div>
+                            <h5 className="text-gray-300 mb-3">Nuclear Regulatory Authority (NRA), Accra, Ghana</h5>
+                            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                                <li>Collaborated on designing a scintillation detector for nuclear and radioactive material detection using SolidWorks 3D and MATLAB</li>
+                                <li>Developed proficiency in complex system design, radiation detection, optimization, and efficiency through hands-on project experience</li>
+                                <li>Assisted with radiation safety protocols and regulatory compliance activities</li>
+                                <li>Participated in training programs and workshops on nuclear security measures</li>
+                            </ul>
+                        </div>
+
+                        {/* Junior Web Developer Experience */}
+                        <div className="bg-gray-900/50 p-6 border-l-2 border-blue-500">
+                            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+                                <h4 className="text-lg font-medium text-white">Junior Web Developer (Volunteer)</h4>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-blue-400 text-sm bg-blue-900/30 px-3 py-1">2024</span>
+                                </div>
+                            </div>
+                            <h5 className="text-gray-300 mb-3">InfoProSolution GH Ltd – Kumasi, Ghana</h5>
+                            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                                <li>Designed and developed the official website for MedAdheregh.org, a digital platform supporting medical adherence</li>
+                                <li>Contributed to front-end and back-end enhancements for various health tech projects</li>
+                                <li>Supported the team in refining UI/UX and debugging tasks across multiple applications</li>
+                            </ul>
+                        </div>
+
+                        {/* Freelance Web Developer Experience */}
+                        <div className="bg-gray-900/50 p-6 border-l-2 border-blue-500">
+                            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+                                <h4 className="text-lg font-medium text-white">Freelance Web Developer (Volunteer)</h4>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-blue-400 text-sm bg-blue-900/30 px-3 py-1">2024</span>
+                                </div>
+                            </div>
+                            <h5 className="text-gray-300 mb-3">Gwaipro Church Music Studio – Ghana</h5>
+                            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                                <li>Built and deployed www.gwaipro.com to promote community-based music production services</li>
+                                <li>Ensured responsive design and user-friendly navigation using React and Tailwind CSS</li>
+                                <li>Delivered continuous technical support and content maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </motion.div>
+
+                {/* Education */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7, delay: 0.8 }}
+                    className="mt-24"
+                >
+                    <div className="flex items-center gap-3 mb-8">
+                        <div className="text-5xl font-bold text-blue-500 opacity-50 font-mono">04</div>
+                        <div>
+                            <h3 className="text-xl font-bold text-white">Educational Background</h3>
                             <div className="h-px w-20 bg-blue-600 mt-1"></div>
                         </div>
                     </div>
@@ -285,20 +461,49 @@ const About = () => {
                     <div className="relative pl-8 border-l border-blue-800/50">
                         {/* Timeline Events */}
                         {[
-                            { year: '2025 - Present', title: 'German Language course at Speak + Write gGmbh , Marburg - Germany', desc: 'Preparing for Master Programme in Physics/Energy Engineering' },
-                            { year: '2024 - 2025', title: 'DAAD LFA Recipient', desc: 'Scholarship for Master study Programme Germany as well as Leadership training' },
-                            { year: '2024 - 2025', title: 'Junior Web developer ', desc: 'Infoprosolutiongh ltd - Website design and Maintenance' },
-                            { year: '2023 - 2024', title: 'Online Course Software Engineering', desc: 'Alx Africa, Nairobi Kenya web-development specialization' },
-                            { year: '2021 - 2023', title: 'Nuclear Regulatory Authority', desc: 'Assistant Radiation Protection Officer, Radiological and Non-Ionizing Department' },
-                            { year: '2017 - 2021', title: 'BSc Physics', desc: 'Kwame Nkrumah University of Science and technology Ghana, Biophysics option' },
-                            { year: '2014 - 2017', title: 'West Africa Secondary School Certificate (WASSCE)', desc: 'Studied General Science (Maths, Biology, Chemistry, Physics)' }
+                            {
+                                year: '2025',
+                                title: 'DAAD Scholar, German Language Student',
+                                location: 'S + W Speak + Write gGmbh Sprachschule, Marburg, Germany',
+                                desc: 'A1.1 completed | Expected to reach B1 by September'
+                            },
+                            {
+                                year: '2025',
+                                title: 'DAAD Leadership for Africa (LFA) Scholarship Recipient',
+                                location: 'Germany',
+                                desc: 'Scholarship for Master study Programme in Germany and Leadership training'
+                            },
+                            {
+                                year: '2024',
+                                title: 'Software Engineering Certificate',
+                                location: ' "Online" Nairobi, Kenya',
+                                desc: 'Scholarship from Mastercard to partake in the 12-months ALX Africa Software engineering Program'
+                            },
+                            {
+                                year: '2021',
+                                title: 'Bachelor of Science, Physics (Biomedical Physics Option)',
+                                location: 'Kwame Nkrumah University of Science and Technology, Kumasi, Ghana',
+                                desc: 'Second Class Honours Upper Division | DAFI Ghana Scholarship Recipient'
+                            },
+                            {
+                                year: '2021',
+                                title: 'Undergraduate Research Project',
+                                location: 'KNUST, Ghana',
+                                desc: 'Design and Simulation of a Departmental Liquid Nitrogen Plant using household and local materials'
+                            },
+                            {
+                                year: '2017',
+                                title: 'WASSCE West Africa Senior High School Certificate, General Science',
+                                location: 'Faith Community Baptist Senior High School, Ghana',
+                                desc: 'Focus on Mathematics, Biology, Chemistry, and Physics | UNHCR Partial Support'
+                            }
                         ].map((item, index) => (
                             <div key={index} className="mb-10 relative">
-                                {/*<div className="absolute -left-10 w-4 h-4 rounded-full bg-blue-200 border-4 border-gray-900"></div>*/}
                                 <div className="absolute -left-[3.25rem] text-blue-500 opacity-70 font-mono text-sm">{item.year}</div>
                                 <div className="bg-gray-900/50 backdrop-blur-sm p-4 border-l border-blue-500">
                                     <h4 className="text-lg font-medium text-white">{item.title}</h4>
-                                    <p className="text-gray-400">{item.desc}</p>
+                                    <p className="text-blue-400 text-sm">{item.location}</p>
+                                    <p className="text-gray-400 mt-1">{item.desc}</p>
                                 </div>
                             </div>
                         ))}
@@ -310,9 +515,9 @@ const About = () => {
             <style jsx>{`
                 .grid-pattern {
                     background-size: 20px 20px;
-                    background-image: 
-                        linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+                    background-image:
+                            linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+                            linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
                 }
             `}</style>
         </section>
