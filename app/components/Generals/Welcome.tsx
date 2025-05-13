@@ -18,7 +18,7 @@ const Welcome: React.FC<WelcomeProps> = ({Heading, AboutTitle, AboutSubTitle, Ab
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start z-0">
                   <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-[6rem] font-bold text-transparent tracking-wider select-none"
                       style={{
-                          WebkitTextStroke: '2px rgba(5,5,5,0.3)',
+                          WebkitTextStroke: '2px rgba(5,5,5,0.5)',
                           // textStroke: '1px rgba(0,0,0,0.1)' as any
                       }}>
                       {/*Welcome*/}

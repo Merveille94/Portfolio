@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef, JSX } from 'react';
 import { motion } from 'framer-motion';
 import Footer from "@/app/components/Generals/Footer";
+import Link from "next/link";
 
 // Define interfaces for TypeScript
 interface MousePosition {
@@ -129,7 +130,7 @@ const HeroSection = (): JSX.Element => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.6 }}
                     >
-                        <a
+                        <Link
                             href="/pages/about"
                             className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-medium rounded-md hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg shadow-blue-500/20 flex items-center gap-2 group"
                         >
@@ -142,13 +143,13 @@ const HeroSection = (): JSX.Element => {
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                             </svg>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="/pages/publications"
                             className="px-8 py-3 bg-transparent border border-blue-500 text-white font-medium rounded-md hover:bg-white/10 transition-all duration-300"
                         >
                             Publications
-                        </a>
+                        </Link>
                     </motion.div>
                 </div>
             </div>

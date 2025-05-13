@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <Link href="/" className="flex items-center pb-8">
-                        <div className="relative h-16 w-48 sm:h-20 sm:w-56 md:h-16 md:w-64">
+                        <div className="relative h-16 w-48 sm:h-20 sm:w-56 md:h-10 md:w-64">
                             <Image
                                 src="/a2.png"
                                 alt="Logo Emanuele initials"
@@ -59,7 +59,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'} overflow-hidden bg-white`}>
-                <div className="flex flex-col px-4 pb-4 space-y-4">
+                <div className="flex flex-col justify-center px-4 pb-4 space-y-4">
                     <MobileNavLink href="/" onClick={() => setIsOpen(false)}>Home</MobileNavLink>
                     <MobileNavLink href="/pages/about" onClick={() => setIsOpen(false)}>About</MobileNavLink>
                     <MobileNavLink href="/pages/news" onClick={() => setIsOpen(false)}>News</MobileNavLink>

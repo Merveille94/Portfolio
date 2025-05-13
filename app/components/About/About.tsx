@@ -183,15 +183,6 @@ const About = () => {
                                 B.Sc. in Physics at Kwame Nkrumah University of Science and Technology (KNUST) in Ghana,
                                 specializing in Biomedical Physics with a focus on nuclear applications.
                             </p>
-
-                            <div className="bg-blue-900/20 border-l-2 border-blue-600 p-4 my-4">
-                                <p className="text-gray-300 italic">
-                                    &#34;As a passionate physicist and programmer, I bridge the gap between theoretical concepts and
-                                    practical applications, with particular interests in nuclear security, radiation protection,
-                                    and sustainable energy systems.&#34;
-                                </p>
-                            </div>
-
                             <p className="text-gray-300 leading-relaxed">
                                 During my undergraduate studies, I designed and simulated a Departmental Liquid Nitrogen Plant using
                                 locally available materials, creating 3D models and using MATLAB for thermodynamic simulations. This
@@ -205,6 +196,13 @@ const About = () => {
                                 I am preparing for a Masters program in Applied Physics or Energy Engineering. I aim to contribute
                                 to research and development in nuclear safety, sustainable energy, and computational applications.
                             </p>
+                            <div className="bg-blue-900/20 border-l-2 border-blue-600 p-4 my-4">
+                                <p className="text-gray-300 italic">
+                                    &#34;As a passionate physicist and programmer, I aim to bridge the gap between theoretical concepts and
+                                    practical applications, with particular interests in Atomic Energy, nuclear security, radiation protection,
+                                    and sustainable energy systems.&#34;
+                                </p>
+                            </div>
 
                             <div className="pt-6 flex flex-wrap gap-4">
                                 <motion.a

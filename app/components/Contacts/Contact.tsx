@@ -29,11 +29,11 @@ const Contact: React.FC = () => {
                 {/* Academic-style heading with blue accent */}
                 <div className="text-center mb-12">
                     <h2 className="font-serif text-4xl font-bold text-gray-400 mb-3">
-                        Correspondence
+                        Contact me
                     </h2>
                     <div className="flex justify-center items-center gap-2">
                         <div className="h-1 w-16 bg-blue-600"></div>
-                        <p className="text-lg text-gray-600 font-light uppercase tracking-wider">Contact me directly</p>
+                        <p className="text-lg text-gray-600 font-light uppercase tracking-wider">📩</p>
                         <div className="h-1 w-16 bg-blue-600"></div>
                     </div>
                     <p className="text-sm text-gray-300">🙏 Website still under development 😊 my apology, I have been busy lately messaging down...</p>
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Left column - Contact form */}
                     <div className="lg:col-span-2 bg-black shadow-xl rounded-lg p-8 border-t-4 border-blue-600">
-                        <h3 className="text-2xl font-bold mb-6 text-gray-200">Send an Inquiry</h3>
+                        <h3 className="text-2xl font-bold mb-6 text-gray-200">Get in touch</h3>
 
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
