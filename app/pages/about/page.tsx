@@ -5,7 +5,7 @@ import Welcome from "@/app/components/Generals/Welcome";
 const Page = () => {
     return (
         <>
-            <Welcome Heading ="Welcome" AboutTitle="About" AboutSubTitle="Home" AboutSubSubTitle="About"/>
+            <Welcome Heading ="Welcome" AboutTitle="About" AboutSubTitle="Home" AboutSubSubTitle="About" bg="bg-gray-900"/>
             <About/>
         </>
     );

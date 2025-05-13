@@ -1,13 +1,9 @@
 "use client";
 import React from 'react';
-import Welcome from "@/app/components/Generals/Welcome";
 
 const Contact: React.FC = () => {
     return (
         <section className="container mx-auto pt-12 pb-20 bg-white overflow-hidden">
-
-            <Welcome Heading="Contact" AboutTitle="Contact" AboutSubTitle="Home" AboutSubSubTitle="Contact"/>
-
             <div className="relative z-10 px-4 md:px-6">
 
                 {/* Get in touch text */}

@@ -31,7 +31,7 @@ const Navbar = () => {
                                 width={240}
                                 height={90}
                                 priority
-                                className="object-contain"
+                                className="object-contain text-white"
                             />
                         </div>
                     </Link>
