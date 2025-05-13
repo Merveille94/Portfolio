@@ -106,8 +106,8 @@ const HeroSection = (): JSX.Element => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
                     >
-                        <span className="inline-block">Emanuele </span>
-                        <span className="inline-block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Merveille </span>
+                        <span className="inline-block">Emanuele  </span>
+                        <span className="inline-block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"> Merveille </span>
                         <span className="inline-block">Guehi</span>
                     </motion.h1>
 
@@ -122,6 +122,7 @@ const HeroSection = (): JSX.Element => {
                         solutions for the global energy transition.
                     </motion.p>
 
+                    <p className="text-sm text-white py-4">🙏 Website still under development 😊 my apology, I have been busy lately</p>
                     <motion.div
                         className="flex flex-wrap gap-4"
                         initial={{ opacity: 0, y: 30 }}

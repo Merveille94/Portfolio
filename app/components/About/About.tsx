@@ -181,7 +181,7 @@ const About = () => {
                                 Physics graduate with a focus on nuclear physics,
                                 computational methods, and energy systems.
                                 I aim to bridge theory and practice, especially in nuclear processes
-                                and sustainable energy modeling..
+                                and sustainable energy modeling.
                             </p>
 
                             <div className="bg-blue-900/20 border-l-2 border-blue-600 p-4 my-4">
@@ -251,7 +251,7 @@ const About = () => {
                                 </motion.a>
 
                                 <motion.a
-                                    href="#publications"
+                                    href="/pages/publications"
                                     className="px-8 py-3 border border-blue-500 text-white font-medium hover:bg-blue-900/30 transition-all duration-300 inline-flex items-center gap-2 group"
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.98 }}

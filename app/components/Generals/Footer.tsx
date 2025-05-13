@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="absolute bottom-0 left-0 right-0 z-20 bg-gray200/20 backdrop-blur-sm border-t border-blue-950/30">
             <div className="container mx-auto px-4 py-2 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
                 <div className="mb-2 md:mb-0">
-                    &copy; {new Date().getFullYear()} Made by Emanuele Merveille Guehi using Nextjs. All rights reserved.
+                    &copy; {new Date().getFullYear()} Made by Emanuele Merveille Guehi using Nextjs & Typescript. All rights reserved.
                 </div>
                 <div className="flex space-x-4">
                     <a href="https://github.com/Merveille94" target='_blank' className="hover:text-blue-400 transition-colors">GitHub</a>
