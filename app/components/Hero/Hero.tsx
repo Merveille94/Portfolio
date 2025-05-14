@@ -123,7 +123,6 @@ const HeroSection = (): JSX.Element => {
                         solutions for the global energy transition.
                     </motion.p>
 
-                    <p className="text-sm text-white py-4">🙏 Website still under development 😊 my apology, I have been busy lately</p>
                     <motion.div
                         className="flex flex-wrap gap-4"
                         initial={{ opacity: 0, y: 30 }}

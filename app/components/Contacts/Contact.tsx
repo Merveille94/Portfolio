@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
                         <p className="text-lg text-gray-600 font-light uppercase tracking-wider">📩</p>
                         <div className="h-1 w-16 bg-blue-600"></div>
                     </div>
-                    <p className="text-sm text-gray-300">🙏 Website still under development 😊 my apology, I have been busy lately messaging down...</p>
+                    {/*<p className="text-sm text-gray-300">🙏 Website still under development 😊 my apology, I have been busy lately messaging down...</p>*/}
                 </div>
 
                 {/* Main contact content */}

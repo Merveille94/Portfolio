@@ -2,12 +2,14 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiHome, FiInfo, FiFileText, FiBook, FiMail } from 'react-icons/fi';
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -57,14 +59,49 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
-            <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'} overflow-hidden bg-white`}>
-                <div className="flex flex-col justify-center px-4 pb-4 space-y-4">
-                    <MobileNavLink href="/" onClick={() => setIsOpen(false)}>Home</MobileNavLink>
-                    <MobileNavLink href="/pages/about" onClick={() => setIsOpen(false)}>About</MobileNavLink>
-                    <MobileNavLink href="/pages/news" onClick={() => setIsOpen(false)}>News</MobileNavLink>
-                    <MobileNavLink href="/pages/publications" onClick={() => setIsOpen(false)}>Publications</MobileNavLink>
-                    <MobileNavLink href="/pages/contact" onClick={() => setIsOpen(false)}>Contact</MobileNavLink>
+            {/* Mobile Menu - Enhanced with blue and black theme */}
+            <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'} overflow-hidden bg-gray-900 shadow-lg`}>
+                <div className="flex flex-col justify-center px-4 py-3 space-y-2 border-t border-blue-500">
+                    <MobileNavLink
+                        href="/"
+                        onClick={() => setIsOpen(false)}
+                        active={pathname === "/"}
+                        icon={<FiHome className="mr-2" />}
+                    >
+                        Home
+                    </MobileNavLink>
+                    <MobileNavLink
+                        href="/pages/about"
+                        onClick={() => setIsOpen(false)}
+                        active={pathname === "/pages/about"}
+                        icon={<FiInfo className="mr-2" />}
+                    >
+                        About
+                    </MobileNavLink>
+                    <MobileNavLink
+                        href="/pages/news"
+                        onClick={() => setIsOpen(false)}
+                        active={pathname === "/pages/news"}
+                        icon={<FiFileText className="mr-2" />}
+                    >
+                        News
+                    </MobileNavLink>
+                    <MobileNavLink
+                        href="/pages/publications"
+                        onClick={() => setIsOpen(false)}
+                        active={pathname === "/pages/publications"}
+                        icon={<FiBook className="mr-2" />}
+                    >
+                        Publications
+                    </MobileNavLink>
+                    <MobileNavLink
+                        href="/pages/contact"
+                        onClick={() => setIsOpen(false)}
+                        active={pathname === "/pages/contact"}
+                        icon={<FiMail className="mr-2" />}
+                    >
+                        Contact
+                    </MobileNavLink>
                 </div>
             </div>
         </nav>
@@ -78,8 +115,29 @@ const NavLink = ({ href, children }: { href: string; children: React.ReactNode }
     </Link>
 );
 
-const MobileNavLink = ({ href, children, onClick }: { href: string; children: React.ReactNode; onClick: () => void }) => (
-    <Link href={href} className="text-black font-medium py-2 block" onClick={onClick}>
+const MobileNavLink = ({
+                           href,
+                           children,
+                           onClick,
+                           active = false,
+                           icon
+                       }: {
+    href: string;
+    children: React.ReactNode;
+    onClick: () => void;
+    active?: boolean;
+    icon?: React.ReactNode;
+}) => (
+    <Link
+        href={href}
+        className={`flex items-center font-medium py-3 px-4 rounded-md transition-all duration-200 ${
+            active
+                ? 'bg-blue-600 text-white'
+                : 'text-blue-300 hover:bg-gray-800 hover:text-blue-100'
+        }`}
+        onClick={onClick}
+    >
+        {icon}
         {children}
     </Link>
 );

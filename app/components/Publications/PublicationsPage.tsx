@@ -78,7 +78,7 @@ const PublicationsPage: React.FC = () => {
         {
             id: "github3",
             title: "Radiation Dose Calculator",
-            description: "C++ application for estimating radiation exposure from various sources and calculate effective doses (Just for Side project not for real medical dignostic)",
+            description: "C++ application for estimating radiation exposure from various sources and calculate effective doses (Just for Side project not for real medical diagnostic)",
             tags: ["C++", "Radiation", "Radiation Safety"],
             icon: <SiCplusplus className="text-blue-400" />,
             link: "https://github.com/Merveille94/Radiation-Dose_Calculator",

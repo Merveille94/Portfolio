@@ -510,14 +510,14 @@ const About = () => {
             </div>
 
             {/* CSS for grid pattern */}
-            <style jsx>{`
-                .grid-pattern {
-                    background-size: 20px 20px;
-                    background-image:
-                            linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-                            linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
-                }
-            `}</style>
+            {/*<style jsx>{`*/}
+            {/*    .grid-pattern {*/}
+            {/*        background-size: 20px 20px;*/}
+            {/*        background-image:*/}
+            {/*                linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),*/}
+            {/*                linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);*/}
+            {/*    }*/}
+            {/*`}</style>*/}
         </section>
     );
 };
