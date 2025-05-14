@@ -73,8 +73,8 @@ MIT License – free to use and adapt with attribution.
 
 For inquiries or collaboration:
 
-* 📧 Email: [your.email@example.com](mailto:your.emanueleguehi@gmail.com)
-* 🌍 Website: [yourdomain.com](https://emanueleguehi.com)
-* 💼 LinkedIn: [linkedin.com/in/yourname](https://linkedin.com/in/emanuelemerveille)
+* 📧 Email: [emanuele@gmail.com](mailto:your.emanueleguehi@gmail.com)
+* 🌍 Website: [emanueleguehi.com](https://emanueleguehi.com)
+* 💼 LinkedIn: [linkedin.com/in/emanuelemerveille](https://linkedin.com/in/emanuelemerveille)
 
 
