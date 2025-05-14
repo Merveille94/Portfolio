@@ -26,7 +26,7 @@ What I particularly appreciated was the focus on practical communication skills 
 Receiving the A1 certificate feels like a tangible validation of the effort I've put in since arriving in Germany. It's just the beginning of my language journey, as I'm continuing on to the A2 level next month, with the goal of reaching B1 proficiency by September.
 
 I'm grateful for this opportunity to develop my language skills, which will be crucial for my future academic and professional endeavors in Germany. It's amazing how much progress can happen in just a few months with dedicated practice and the right learning environment!`,
-        image: "/api/placeholder/600/400",
+        image: "/I1.jpg",
         date: "May 10, 2025",
         author: "Emanuele Guehi",
         category: "Education"
@@ -46,7 +46,7 @@ The international atmosphere in my class has also been enlightening. I've met st
 Though there have been challenging moments, especially with German grammar rules and pronunciation, I've been making steady progress. Being able to understand more of the conversations around me, read basic texts, and express myself in simple German sentences feels like significant achievements.
 
 I'm looking forward to continuing this language journey and reaching my goal of B1 proficiency in the coming months. The foundation I'm building now will be essential for my future academic and professional pursuits in Germany.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (29).jpg",
         date: "April 25, 2025",
         author: "Emanuele Guehi",
         category: "Education"
@@ -66,7 +66,7 @@ The scholarship begins with an intensive German language course, which I'll be s
 I'm looking forward to making the most of this opportunity by not only excelling academically but also building networks, engaging in cross-cultural exchange, and developing skills that will help me contribute meaningfully to scientific advancement when I return.
 
 I want to express my deepest gratitude to everyone who supported me throughout this application process - my mentors, former professors, and especially the DAFI scholarship program that supported my undergraduate studies. This new chapter wouldn't be possible without the foundation they helped me build.`,
-        image: "/api/placeholder/600/400",
+        image: "/I3.jpg",
         date: "March 15, 2025",
         author: "Emanuele Guehi",
         category: "Achievement"
@@ -88,7 +88,7 @@ The freelance experience has been challenging but incredibly rewarding. Managing
 What makes this work especially meaningful is knowing that every project helps me financially support my family while building a portfolio that will open doors to future opportunities. The technical skills and professional relationships I'm developing now are invaluable assets for my long-term career goals.
 
 I'm grateful for these opportunities and excited to continue growing as a developer while seeking ways to create more innovative solutions for the clients who trust me with their digital presence.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (4).jpg",
         date: "February 10, 2025",
         author: "Emanuele Guehi",
         category: "Professional Development"
@@ -108,7 +108,7 @@ Beyond the technical aspects, I've gained valuable experience in regulatory comp
 I've also had the opportunity to participate in public education initiatives about radiation safety, which has improved my ability to communicate complex scientific concepts to non-technical audiences - a skill that's invaluable in any scientific career.
 
 This position has solidified my interest in pursuing further specialization in nuclear applications, particularly in the context of sustainable energy solutions. The combination of technical challenge, public safety impact, and environmental considerations makes this field particularly compelling to me as I plan my future career path.`,
-        image: "/api/placeholder/600/400",
+        image: "/I4.jpg",
         date: "December 15, 2024",
         author: "Emanuele Guehi",
         category: "Professional Experience"
@@ -130,7 +130,7 @@ Securing funding was a significant hurdle, but we were fortunate to receive supp
 Being selected for this prestigious showcase validated all our hard work and late nights. It was an honor to present our innovation to university leadership, industry professionals, and visiting high school students who might be inspired to pursue similar projects in the future.
 
 I remain deeply grateful to everyone who supported us - from our supervisors Dr. Eric K Addison, Dr. Martin Owusu-Mensah, and Dr. Christiana Subah, to Madame Catherine Lawluvy from DAFI Ghana, Mr. Edem from Metallurgical Engineering, our colleague Mr. Evans Honu, and all the lecturers who provided guidance throughout the process.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (9).jpg",
         date: "May 14, 2022",
         author: "Emanuele Guehi",
         category: "Academic Achievement"
@@ -150,7 +150,7 @@ Looking back, I'm especially proud of my final year project developing a departm
 None of this would have been possible without the DAFI scholarship (German Academic Refugee Initiative), which provided the financial support that made my education at KNUST possible. Their belief in my potential and consistent support throughout these years has been life-changing.
 
 As I transition to the next phase of my academic and professional journey, I carry with me not just a degree, but a transformed mindset, valuable technical skills, and a deeper appreciation for the power of science to address real-world challenges. I'm grateful to all my professors, classmates, and the entire KNUST community for being part of this formative chapter in my life.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (27).png",
         date: "November 15, 2021",
         author: "Emanuele Guehi",
         category: "Education"
@@ -172,7 +172,7 @@ The project involved many sleepless nights of calculations, design modifications
 This project has given me invaluable practical experience in cryogenics, thermodynamic engineering, project management, and teamwork. The process of translating theoretical physics knowledge into a practical solution for a real-world problem has been incredibly fulfilling and has confirmed my passion for applied physics.
 
 I'm grateful to our supervisors Dr. Eric K Addison, Dr. Martin Owusu-Mensah, and Dr. Christiana Subah for their guidance throughout this project, and I look forward to seeing our design potentially implemented in the department.`,
-        image: "/api/placeholder/600/400",
+        image: "/A (21).jpg",
         date: "August 20, 2021",
         author: "Emanuele Guehi",
         category: "Research"
@@ -192,7 +192,7 @@ What made this volunteer work especially meaningful was seeing the direct impact
 As a refugee myself, I understand the challenges of camp life intimately. This shared experience helped me approach volunteer work with genuine empathy and practical knowledge about which interventions would be most helpful. At the same time, my university education provided me with organizational skills that enhanced the effectiveness of our programs.
 
 I continue to stay connected with the Egyeikrom community and look for opportunities to support humanitarian initiatives there. This volunteer experience reinforced my belief in the importance of community-based support systems and the difference that can be made when people with shared experiences work together to address common challenges.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (3).jpg",
         date: "April 15, 2019",
         author: "Emanuele Guehi",
         category: "Volunteerism"
@@ -212,7 +212,7 @@ Beyond academics, we conduct regular motivational sessions that address the psyc
 What I find most meaningful is seeing the tangible impact of our mentorship. Several students I've worked with have successfully obtained scholarships for further education, and many others have shown marked improvement in their academic performance and confidence. One particularly rewarding moment was when a student who had been considering dropping out due to family pressure instead decided to complete his education after our mentorship sessions.
 
 This volunteer work has taught me as much as it has taught the students. I've developed better communication skills, learned to adapt guidance to different learning styles, and gained deeper insight into the systemic challenges facing refugee education. These experiences continue to inform my approach to community service and my understanding of education as a pathway to opportunity.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (13).jpg",
         date: "July 10, 2018",
         author: "Emanuele Guehi",
         category: "Volunteerism"
@@ -234,7 +234,7 @@ Beyond my official responsibilities, I've volunteered as a French language tutor
 Being part of PHYSAG leadership has taught me valuable lessons about motivating teams, managing events with limited resources, and creating engaging educational experiences. These skills complement my technical physics knowledge and will be valuable throughout my career.
 
 I'm grateful for the trust placed in me by the PHYSAG membership and for the chance to play a role in building a stronger physics student community at KNUST.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (1).jpg",
         date: "May 5, 2019",
         author: "Emanuele Guehi",
         category: "Leadership"
@@ -256,7 +256,7 @@ Beyond the technical aspects of financial management, this position has taught m
 What I find most rewarding about this role is knowing that proper financial management directly supports the success of fellow scholarship recipients. Every efficiently managed cedi means more resources available for activities that benefit our community and advance our educational goals.
 
 I'm grateful for the trust placed in me by my fellow scholarship recipients and the DAFI administration, and I strive to fulfill this responsibility with integrity and diligence.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (26).jpg",
         date: "January 10, 2019",
         author: "Emanuele Guehi",
         category: "Leadership"
@@ -278,7 +278,7 @@ While I'm enthusiastic about beginning classes, I also recognize the challenges 
 I'm particularly looking forward to exploring the biomedical applications of physics, which aligns with my interest in using science to address practical human needs. The curriculum offers fascinating courses in quantum mechanics, electromagnetism, thermodynamics, and specialized biomedical physics topics that will build a strong foundation for future research or professional work.
 
 As I begin this new chapter, I'm filled with gratitude for the opportunity and determination to make the most of it. This matriculation isn't just a personal milestone—it represents hope and possibility for refugees pursuing education against significant odds.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (21).jpg",
         date: "September 15, 2017",
         author: "Emanuele Guehi",
         category: "Education"
@@ -300,7 +300,7 @@ I'm especially excited about joining the community of DAFI scholars at KNUST and
 With this support, I can fully focus on my studies in Physics without the constant stress of financial insecurity. I'm committed to making the most of this opportunity not only by excelling academically but also by contributing positively to my university community and eventually using my education to make meaningful contributions to society.
 
 My sincere gratitude goes to the German government, UNHCR, and all those involved in the DAFI program for investing in refugee education and for believing in my potential.`,
-        image: "/api/placeholder/600/400",
+        image: "/I (20).jpg",
         date: "August 25, 2017",
         author: "Emanuele Guehi",
         category: "Achievement"
@@ -322,7 +322,7 @@ My fellow classmates have been an incredible source of support, creating study g
 As I look toward university education, I'm filled with both excitement and determination. This high school experience has provided a strong foundation in the sciences and has confirmed my desire to pursue physics at Kwame Nkrumah University of Science and Technology. Whatever challenges lie ahead, I'll face them with the same persistence and curiosity that have brought me to this milestone.
 
 To my teachers, classmates, family, and the UNHCR staff who supported my education - thank you for being part of this journey. This is just the beginning!`,
-        image: "/api/placeholder/600/400",
+        image: "/I (5).jpg",
         date: "June 15, 2017",
         author: "Emanuele Guehi",
         category: "Education"

@@ -100,7 +100,7 @@ const NewsPage: React.FC = () => {
                                             alt={article.title}
                                             width={600}
                                             height={400}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-cover fit-cover"
                                         />
                                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-2">
                     <span className="text-xs font-semibold text-blue-400 px-2 py-1 rounded bg-gray-900 bg-opacity-70">
@@ -187,7 +187,7 @@ const NewsPage: React.FC = () => {
                                     alt={selectedArticle.title}
                                     width={800}
                                     height={500}
-                                    className="w-full h-64 md:h-80 object-cover rounded mb-4"
+                                    className="w-full h-64 md:h-120 object-cover rounded mb-4"
                                 />
                                 <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                                     {selectedArticle.category}
