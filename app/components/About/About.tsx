@@ -219,7 +219,7 @@ const About = () => {
                                 </motion.a>
 
                                 <motion.a
-                                    href="/projects"
+                                    href="/pages/publications"
                                     className="px-8 py-3 border border-blue-500 text-white font-medium hover:bg-blue-900/30 transition-all duration-300 inline-flex items-center gap-2 group"
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.98 }}
