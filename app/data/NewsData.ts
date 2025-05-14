@@ -179,6 +179,46 @@ I'm grateful to our supervisors Dr. Eric K Addison, Dr. Martin Owusu-Mensah, and
     },
     {
         id: 9,
+        title: "Supporting Fellow Refugees as DAFI Community Engagement Volunteer",
+        excerpt: "Coordinating health initiatives and donation campaigns at Egyeikrom Refugee Camp as a DAFI volunteer.",
+        content: `Giving back to the refugee community that supported me has always been important, which is why I'm proud of my role as a Volunteer Coordinator for DAFI Community Engagement at Egyeikrom Refugee Camp. This experience has been deeply meaningful, allowing me to use my organizational skills and education to help address pressing needs within the refugee community.
+
+One of our most successful initiatives was organizing donation campaigns for essential health supplies. Working with a small team of volunteers, we identified critical needs within the camp community and reached out to potential donors and NGOs. Through persistent networking and clear communication about community needs, we were able to secure donations of hygiene products, educational materials, and basic medical supplies that made a tangible difference in camp residents' daily lives.
+
+Our health initiatives were particularly impactful. We coordinated logistics for malaria testing events that helped identify cases early when treatment is most effective. We also arranged regular blood pressure screening sessions that detected previously undiagnosed hypertension cases among older camp residents. These basic health interventions potentially saved lives by connecting people with necessary medical care before conditions became severe.
+
+What made this volunteer work especially meaningful was seeing the direct impact of our efforts on people's wellbeing. When a child could attend school with proper supplies, or when an elderly person received needed medication after a screening event, the value of our organizational work became immediately clear.
+
+As a refugee myself, I understand the challenges of camp life intimately. This shared experience helped me approach volunteer work with genuine empathy and practical knowledge about which interventions would be most helpful. At the same time, my university education provided me with organizational skills that enhanced the effectiveness of our programs.
+
+I continue to stay connected with the Egyeikrom community and look for opportunities to support humanitarian initiatives there. This volunteer experience reinforced my belief in the importance of community-based support systems and the difference that can be made when people with shared experiences work together to address common challenges.`,
+        image: "/api/placeholder/600/400",
+        date: "April 15, 2019",
+        author: "Emanuele Guehi",
+        category: "Volunteerism"
+    },
+    {
+        id: 10,
+        title: "Mentoring Refugee Youth through DAFI Mentorship Program",
+        excerpt: "Providing academic guidance and support to young refugees at Krisan Camp through structured mentorship activities.",
+        content: `My involvement with the DAFI Mentorship Program at Krisan Refugee Camp has been one of the most personally rewarding aspects of my university experience. As a volunteer mentor, I've had the privilege of working with refugee youth who have academic potential but face numerous barriers to educational advancement.
+
+The mentorship program pairs university students who are DAFI scholars with refugee high school students who aspire to higher education. Having navigated the challenging transition from refugee camp education to university myself, I'm uniquely positioned to guide these students through academic preparation, scholarship applications, and the psychological adjustments that educational advancement requires.
+
+Our mentorship activities include weekly academic coaching sessions where we help students strengthen their skills in core subjects like mathematics, sciences, and languages. These sessions focus not just on content knowledge but also on developing effective study strategies, time management skills, and examination techniques that will serve students throughout their educational journeys.
+
+Beyond academics, we conduct regular motivational sessions that address the psychological aspects of educational pursuit. Many refugee youth struggle with uncertainty about their futures, which can undermine their motivation to invest in education. Through sharing my own story and connecting students with other successful refugee scholars, we help build the resilience and determination needed to persist through challenges.
+
+What I find most meaningful is seeing the tangible impact of our mentorship. Several students I've worked with have successfully obtained scholarships for further education, and many others have shown marked improvement in their academic performance and confidence. One particularly rewarding moment was when a student who had been considering dropping out due to family pressure instead decided to complete his education after our mentorship sessions.
+
+This volunteer work has taught me as much as it has taught the students. I've developed better communication skills, learned to adapt guidance to different learning styles, and gained deeper insight into the systemic challenges facing refugee education. These experiences continue to inform my approach to community service and my understanding of education as a pathway to opportunity.`,
+        image: "/api/placeholder/600/400",
+        date: "July 10, 2018",
+        author: "Emanuele Guehi",
+        category: "Volunteerism"
+    },
+    {
+        id: 11,
         title: "Serving as Deputy Science and Technology Committee Chair of PHYSAG",
         excerpt: "Taking on a leadership role in the Physics Students Association of Ghana at KNUST to promote scientific engagement.",
         content: `I'm proud to share my experience serving as the Deputy Chairman of the Science and Technology Committee for PHYSAG (Physics Students Association of Ghana) at KNUST. This leadership position has been an incredible opportunity to contribute to the scientific community on campus while developing valuable organizational and communication skills.
@@ -200,7 +240,7 @@ I'm grateful for the trust placed in me by the PHYSAG membership and for the cha
         category: "Leadership"
     },
     {
-        id: 10,
+        id: 12,
         title: "Managing Finances as DAFI Scholarship Financial Secretary",
         excerpt: "Taking responsibility for budget management and financial reporting for the DAFI scholarship community.",
         content: `I'm honored to have been selected as the Financial Secretary for the DAFI Scholarship Club in Ghana. This position carries significant responsibility, as I'm entrusted with managing the financial aspects of our scholarship community's activities and ensuring transparency in all our financial dealings.
@@ -222,7 +262,7 @@ I'm grateful for the trust placed in me by my fellow scholarship recipients and 
         category: "Leadership"
     },
     {
-        id: 11,
+        id: 13,
         title: "Receiving the DAFI Scholarship for University Education",
         excerpt: "Being awarded the German Academic Refugee Initiative scholarship to pursue my physics degree at KNUST.",
         content: `I'm incredibly grateful and honored to share that I've been awarded the DAFI (German Academic Refugee Initiative) scholarship to support my undergraduate studies in Physics at Kwame Nkrumah University of Science and Technology! This scholarship, funded by the German government and administered by UNHCR, provides comprehensive support for refugees pursuing higher education.
@@ -244,7 +284,29 @@ My sincere gratitude goes to the German government, UNHCR, and all those involve
         category: "Achievement"
     },
     {
-        id: 12,
+        id: 14,
+        title: "Beginning My University Journey: Matriculation at KNUST",
+        excerpt: "Officially joining Kwame Nkrumah University of Science and Technology as a Physics student with DAFI scholarship support.",
+        content: `Today marks the official beginning of my university journey as I participated in the matriculation ceremony at Kwame Nkrumah University of Science and Technology (KNUST)! Becoming a full-fledged university student feels surreal after years of uncertainty about whether I would be able to pursue higher education.
+
+The matriculation ceremony was impressive and filled with traditions that date back to the university's founding. Seeing hundreds of new students in academic dress, all taking the same oath and embarking on similar journeys from different backgrounds, created a powerful sense of community and purpose. As I recited the matriculation oath, I felt the weight of the commitment I was making to academic excellence and integrity.
+
+Being admitted to study Physics at this prestigious institution is an incredible opportunity that would not have been possible without the DAFI (German Academic Refugee Initiative) scholarship. As a refugee, the financial barriers to university education seemed insurmountable, but this scholarship has opened doors that I once thought would remain forever closed.
+
+KNUST's campus is impressive, with well-equipped science laboratories, an extensive library, and computer facilities that will support my learning over the next four years. During orientation, we toured the Physics Department, and seeing the laboratories where I'll conduct experiments and gain hands-on experience made the academic journey ahead feel real and exciting.
+
+While I'm enthusiastic about beginning classes, I also recognize the challenges ahead. Adapting to university-level academics, managing time effectively, and navigating a new social environment will require adjustment. However, meeting fellow DAFI scholars and other Physics students has already provided me with a supportive community to lean on during difficult times.
+
+I'm particularly looking forward to exploring the biomedical applications of physics, which aligns with my interest in using science to address practical human needs. The curriculum offers fascinating courses in quantum mechanics, electromagnetism, thermodynamics, and specialized biomedical physics topics that will build a strong foundation for future research or professional work.
+
+As I begin this new chapter, I'm filled with gratitude for the opportunity and determination to make the most of it. This matriculation isn't just a personal milestone—it represents hope and possibility for refugees pursuing education against significant odds.`,
+        image: "/api/placeholder/600/400",
+        date: "September 15, 2017",
+        author: "Emanuele Guehi",
+        category: "Education"
+    },
+    {
+        id: 15,
         title: "Graduating as Best Science Student from Faith Community Baptist Senior High School",
         excerpt: "Completing secondary education with recognition for academic excellence in the sciences.",
         content: `Today marks the successful completion of my senior high school journey at Faith Community Baptist Senior High School! I'm honored and humbled to have been recognized as the Best Science Student during our graduation ceremony.
@@ -264,5 +326,6 @@ To my teachers, classmates, family, and the UNHCR staff who supported my educati
         date: "June 15, 2017",
         author: "Emanuele Guehi",
         category: "Education"
-    }
+    },
+
 ];
