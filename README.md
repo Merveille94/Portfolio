@@ -34,7 +34,7 @@ Welcome to my personal portfolio website! This project showcases my physics, ene
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](B%20(20).png)
+![Portfolio Screenshot](screenshot.png)
 
 
 ## 📦 Installation
@@ -77,6 +77,4 @@ For inquiries or collaboration:
 * 🌍 Website: [yourdomain.com](https://emanueleguehi.com)
 * 💼 LinkedIn: [linkedin.com/in/yourname](https://linkedin.com/in/emanuelemerveille)
 
----
 
-Would you like me to include badges, a live demo link, or tailor the content based on your specific sections (e.g., exact project names or education)?
