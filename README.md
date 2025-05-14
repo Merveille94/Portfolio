@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🌐 EMG Portfolio Website
 
-First, run the development server:
+Welcome to my personal portfolio website! This project showcases my physics, energy engineering, and web development background. It highlights my professional experiences, academic journey, and creative side projects—from nuclear energy concepts to interactive web apps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Built With
+
+* [Next.js](https://nextjs.org/) – React framework for production
+* [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript for scalable apps
+* [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+* [Framer Motion](https://www.framer.com/motion/) – Smooth animations
+* [React Icons](https://react-icons.github.io/react-icons/) – Icon library integration
+
+## 🚀 Features
+
+* 📄 About section with academic and professional background
+* 🧪 Projects with technologies used and demo links
+* 🧠 Hobbies including Chess and Rubik’s Cube
+* 🎯 Career goals and aspirations
+* 🌍 Responsive and accessible design
+* ⚡ Optimized performance using Next.js image and font loading
+
+## 📁 Folder Structure
+
+```
+.
+├── components/         # Reusable UI components (Navbar, ProjectCard, etc.)
+├── pages/              # Next.js page routes
+├── public/             # Static assets (images, icons, etc.)
+├── styles/             # Global styles
+├── types/              # TypeScript type definitions
+└── README.md           # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📸 Screenshots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img href="B (20).png" alt="my website" />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation
 
-## Learn More
+To run locally:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git clone https://github.com/your-username/portfolio-website.git
+cd portfolio-website
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visit `http://localhost:3000` to view the site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📤 Deployment
 
-## Deploy on Vercel
+Deployed via [Vercel](https://vercel.com/) for continuous deployment. To deploy:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Or push to your GitHub repo connected to Vercel.
+
+## 🤝 Contributing
+
+This is a personal portfolio, so contributions aren’t needed. However, feel free to fork and adapt it for your own use!
+
+## 🧾 License
+
+MIT License – free to use and adapt with attribution.
+
+## 📫 Contact
+
+For inquiries or collaboration:
+
+* 📧 Email: [your.email@example.com](mailto:your.emanueleguehi@gmail.com)
+* 🌍 Website: [yourdomain.com](https://emanueleguehi.com)
+* 💼 LinkedIn: [linkedin.com/in/yourname](https://linkedin.com/in/emanuelemerveille)
+
+---
+
+Would you like me to include badges, a live demo link, or tailor the content based on your specific sections (e.g., exact project names or education)?
