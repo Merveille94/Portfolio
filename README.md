@@ -34,7 +34,7 @@ Welcome to my personal portfolio website! This project showcases my physics, ene
 
 ## 📸 Screenshots
 
-<img href="/B (20).png" alt="my website" />
+<img href="/public/B (20).png" alt="my website" />
 
 ## 📦 Installation
 
