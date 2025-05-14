@@ -193,7 +193,7 @@ const About = () => {
 
                             <p className="text-gray-300 leading-relaxed">
                                 Currently in Germany pursuing language studies with a DAAD Leadership for Africa Scholarship,
-                                I am preparing for a Masters program in Applied Physics or Energy Engineering. I aim to contribute
+                                In preparation for a Masters program in Physics, Applied Physics, IT or Energy Engineering. I aim to contribute
                                 to research and development in nuclear safety, sustainable energy, and computational applications.
                             </p>
                             <div className="bg-blue-900/20 border-l-2 border-blue-600 p-4 my-4">
