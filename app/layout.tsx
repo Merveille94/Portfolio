@@ -25,7 +25,7 @@ export default function RootLayout({
             {/* Open Graph Meta */}
             <meta property="og:title" content="Emanuele Merveille .G" />
             <meta property="og:description" content="Website of Emanuele Merveille Guehi" />
-            <meta property="og:image" content="/icon.jpg" />
+            <meta property="og:image" content="/icon.png" />
             <meta property="og:url" content="https://emanueleguehi.com" />
             <meta property="og:type" content="website" />
             <meta name="twitter:card" content="summary_large_image" />
