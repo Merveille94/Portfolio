@@ -263,28 +263,6 @@ I'm grateful for the trust placed in me by my fellow scholarship recipients and 
     },
     {
         id: 13,
-        title: "Receiving the DAFI Scholarship for University Education",
-        excerpt: "Being awarded the German Academic Refugee Initiative scholarship to pursue my physics degree at KNUST.",
-        content: `I'm incredibly grateful and honored to share that I've been awarded the DAFI (German Academic Refugee Initiative) scholarship to support my undergraduate studies in Physics at Kwame Nkrumah University of Science and Technology! This scholarship, funded by the German government and administered by UNHCR, provides comprehensive support for refugees pursuing higher education.
-
-The selection process was rigorous, requiring academic records, personal statements, and interviews to assess both academic potential and commitment to community development. Being selected feels like a validation of my academic efforts thus far and my aspirations for the future.
-
-This scholarship is truly life-changing, as it covers tuition fees, monthly allowances for living expenses, book allowances, and other study-related costs that would otherwise be insurmountable barriers to continuing my education. Without this support, pursuing university education would have remained a distant dream.
-
-What makes the DAFI program particularly meaningful is that it goes beyond financial assistance. The program also provides mentorship, leadership development opportunities, and connects scholars with a community of peers facing similar challenges. This holistic approach recognizes that refugee students often need support systems that address both academic and psychosocial needs.
-
-I'm especially excited about joining the community of DAFI scholars at KNUST and across Ghana. Already, I've met inspiring individuals with remarkable stories of resilience and determination who are pursuing degrees in various fields. These connections will be invaluable throughout my university journey.
-
-With this support, I can fully focus on my studies in Physics without the constant stress of financial insecurity. I'm committed to making the most of this opportunity not only by excelling academically but also by contributing positively to my university community and eventually using my education to make meaningful contributions to society.
-
-My sincere gratitude goes to the German government, UNHCR, and all those involved in the DAFI program for investing in refugee education and for believing in my potential.`,
-        image: "/api/placeholder/600/400",
-        date: "August 25, 2017",
-        author: "Emanuele Guehi",
-        category: "Achievement"
-    },
-    {
-        id: 14,
         title: "Beginning My University Journey: Matriculation at KNUST",
         excerpt: "Officially joining Kwame Nkrumah University of Science and Technology as a Physics student with DAFI scholarship support.",
         content: `Today marks the official beginning of my university journey as I participated in the matriculation ceremony at Kwame Nkrumah University of Science and Technology (KNUST)! Becoming a full-fledged university student feels surreal after years of uncertainty about whether I would be able to pursue higher education.
@@ -304,6 +282,28 @@ As I begin this new chapter, I'm filled with gratitude for the opportunity and d
         date: "September 15, 2017",
         author: "Emanuele Guehi",
         category: "Education"
+    },
+    {
+        id: 14,
+        title: "Receiving the DAFI Scholarship for University Education",
+        excerpt: "Being awarded the German Academic Refugee Initiative scholarship to pursue my physics degree at KNUST.",
+        content: `I'm incredibly grateful and honored to share that I've been awarded the DAFI (German Academic Refugee Initiative) scholarship to support my undergraduate studies in Physics at Kwame Nkrumah University of Science and Technology! This scholarship, funded by the German government and administered by UNHCR, provides comprehensive support for refugees pursuing higher education.
+
+The selection process was rigorous, requiring academic records, personal statements, and interviews to assess both academic potential and commitment to community development. Being selected feels like a validation of my academic efforts thus far and my aspirations for the future.
+
+This scholarship is truly life-changing, as it covers tuition fees, monthly allowances for living expenses, book allowances, and other study-related costs that would otherwise be insurmountable barriers to continuing my education. Without this support, pursuing university education would have remained a distant dream.
+
+What makes the DAFI program particularly meaningful is that it goes beyond financial assistance. The program also provides mentorship, leadership development opportunities, and connects scholars with a community of peers facing similar challenges. This holistic approach recognizes that refugee students often need support systems that address both academic and psychosocial needs.
+
+I'm especially excited about joining the community of DAFI scholars at KNUST and across Ghana. Already, I've met inspiring individuals with remarkable stories of resilience and determination who are pursuing degrees in various fields. These connections will be invaluable throughout my university journey.
+
+With this support, I can fully focus on my studies in Physics without the constant stress of financial insecurity. I'm committed to making the most of this opportunity not only by excelling academically but also by contributing positively to my university community and eventually using my education to make meaningful contributions to society.
+
+My sincere gratitude goes to the German government, UNHCR, and all those involved in the DAFI program for investing in refugee education and for believing in my potential.`,
+        image: "/api/placeholder/600/400",
+        date: "August 25, 2017",
+        author: "Emanuele Guehi",
+        category: "Achievement"
     },
     {
         id: 15,
