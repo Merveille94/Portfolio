@@ -1,8 +1,16 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Send, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
+    const form = useRef<HTMLFormElement>(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<{
+        success: boolean;
+        message: string;
+    } | null>(null);
+
     const [formState, setFormState] = useState({
         name: '',
         email: '',
@@ -19,8 +27,40 @@ const Contact: React.FC = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log(formState);
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        // Using EmailJS to send the form
+        emailjs.sendForm(
+            'service_7rr16we',
+            'template_ecbc46w',
+            form.current as HTMLFormElement,
+            'zQ3SmjaeNii7TnyC4'
+        )
+            .then((result) => {
+                console.log('Email successfully sent!', result.text);
+                setSubmitStatus({
+                    success: true,
+                    message: 'Your message has been sent successfully!'
+                });
+                // Reset form
+                setFormState({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+            })
+            .catch((error) => {
+                console.error('Failed to send email:', error.text);
+                setSubmitStatus({
+                    success: false,
+                    message: 'Failed to send your message. Please try again later.'
+                });
+            })
+            .finally(() => {
+                setIsSubmitting(false);
+            });
     };
 
     return (
@@ -36,7 +76,6 @@ const Contact: React.FC = () => {
                         <p className="text-lg text-gray-600 font-light uppercase tracking-wider">📩</p>
                         <div className="h-1 w-16 bg-blue-600"></div>
                     </div>
-                    {/*<p className="text-sm text-gray-300">🙏 Website still under development 😊 my apology, I have been busy lately messaging down...</p>*/}
                 </div>
 
                 {/* Main contact content */}
@@ -45,7 +84,14 @@ const Contact: React.FC = () => {
                     <div className="lg:col-span-2 bg-black shadow-xl rounded-lg p-8 border-t-4 border-blue-600">
                         <h3 className="text-2xl font-bold mb-6 text-gray-200">Get in touch</h3>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        {/* Status message display */}
+                        {submitStatus && (
+                            <div className={`mb-6 p-4 rounded ${submitStatus.success ? 'bg-green-100 border border-green-400 text-green-700' : 'bg-red-100 border border-red-400 text-red-700'}`}>
+                                {submitStatus.message}
+                            </div>
+                        )}
+
+                        <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-1">Full Name</label>
@@ -102,9 +148,10 @@ const Contact: React.FC = () => {
                             <div className="flex justify-end">
                                 <button
                                     type="submit"
-                                    className="bg-black text-white border-1 border-white px-8 py-3 rounded-md font-medium hover:bg-blue-600 hover:border-none transition-colors duration-300 flex items-center gap-2"
+                                    disabled={isSubmitting}
+                                    className={`${isSubmitting ? 'bg-gray-600' : 'bg-black hover:bg-blue-600'} text-white border border-white px-8 py-3 rounded-md font-medium transition-colors duration-300 flex items-center gap-2`}
                                 >
-                                    Submit Inquiry
+                                    {isSubmitting ? 'Sending...' : 'Submit Inquiry'}
                                     <Send size={16} />
                                 </button>
                             </div>
