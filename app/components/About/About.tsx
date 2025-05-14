@@ -339,7 +339,7 @@ const About = () => {
                                     </div>
                                     <div>
                                         <div className="flex justify-between mb-1">
-                                            <span className="text-gray-300">English (Professional)</span>
+                                            <span className="text-gray-300">English ( Native - Fluency)</span>
                                             <span className="text-blue-400 text-sm">100%</span>
                                         </div>
                                         <div className="h-1.5 bg-gray-700 rounded-full overflow-hidden">
@@ -348,7 +348,7 @@ const About = () => {
                                     </div>
                                     <div>
                                         <div className="flex justify-between mb-1">
-                                            <span className="text-gray-300">German (Elementary)</span>
+                                            <span className="text-gray-300">German (Elementary A1)</span>
                                             <span className="text-blue-400 text-sm">25%</span>
                                         </div>
                                         <div className="h-1.5 bg-gray-700 rounded-full overflow-hidden">
