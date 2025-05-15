@@ -32,8 +32,35 @@ export default function RootLayout({
             <meta property="og:type" content="website" />
             <meta name="twitter:card" content="summary_large_image" />
 
+            <script type="application/ld+json">
+                {`
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Emanuele Merveille Guehi",
+  "url": "https://emanueleguehi.com",
+  "sameAs": [
+    "https://github.com/Merveille94",
+    "https://linkedin.com/in/emanuelemerveille"
+  ],
+  "image": "https://emanueleguehi.com/bg-h.jpg",
+  "jobTitle": "Physicist, Radiation security advisor and Web Developer",
+  "description": "Passionate about energy systems, physics, and software development.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Kwame Nkrumah University Of science and Technology, Ghana"
+  }
+}
+`}
+            </script>
+
+
             {/* Optional: Favicon */}
             <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
+            <link rel="apple-touch-icon" href="/icon.png" />
+
             <title>Emanuele Merveille .G</title>
         </head>
         <body>
