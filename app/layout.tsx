@@ -33,7 +33,7 @@ export default function RootLayout({
             <meta name="twitter:card" content="summary_large_image" />
 
             {/* Optional: Favicon */}
-            <link rel="icon" href="/icon.png" />
+            <link rel="icon" href="/favicon.ico" />
             <title>Emanuele Merveille .G</title>
         </head>
         <body>
