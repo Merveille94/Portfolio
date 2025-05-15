@@ -7,7 +7,9 @@ import React from "react";
 export const metadata: Metadata = {
     title: "Emanuele Merveille .G",
     description: "Website of Emanuele Merveille Guehi",
-    icons: "/favicon.ico",
+    icons: {
+        icon: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({
@@ -16,7 +18,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en, fr, de">
         <head>
             {/* Standard Meta */}
             <meta charSet="UTF-8" />
