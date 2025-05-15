@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://emanueleguehi.com
+
+# Sitemaps
+Sitemap: https://emanueleguehi.com/sitemap.xml
