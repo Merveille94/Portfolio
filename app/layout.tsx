@@ -7,7 +7,7 @@ import React from "react";
 export const metadata: Metadata = {
     title: "Emanuele Merveille .G",
     description: "Website of Emanuele Merveille Guehi",
-    icons: "/icon.png",
+    icons: "/favicon.ico",
 };
 
 export default function RootLayout({
