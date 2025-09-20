@@ -63,6 +63,8 @@ export default function RootLayout({
 
             <title>Emanuele Merveille .G</title>
         </head>
+
+
         <body>
         <Navbar />
         {children}

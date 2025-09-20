@@ -15,9 +15,9 @@ export interface NewsArticle {
 export const newsArticles: NewsArticle[] = [
     {
         id: 1,
-        title: "Successfully Completed German A1 Certificate at Speak + Write",
-        excerpt: "Achieved my first milestone in German language learning, completing the A1 level at Speak and Write in Marburg, Germany.",
-        content: `I'm excited to share that I've officially received my first German language certificate, completing the A1 level at Speak + Write language school in Marburg! This represents a significant first step in my language journey here in Germany.
+        title: "Successfully Completed German B1 Certificate at Speak + Write",
+        excerpt: "Achieved my first milestone in German language learning, completing the B1 level at Speak and Write in Marburg, Germany.",
+        content: `I'm excited to share that I've officially received my first German language certificate, completing the B1 level at Speak + Write language school in Marburg! This represents a significant first step in my language journey here in Germany.
 
 The course was challenging but incredibly rewarding. From learning basic grammar structures to building essential vocabulary, the classes provided a solid foundation for my German language skills. The instructors at Speak + Write were supportive and created an engaging learning environment that made the process enjoyable.
 
@@ -26,7 +26,7 @@ What I particularly appreciated was the focus on practical communication skills 
 Receiving the A1 certificate feels like a tangible validation of the effort I've put in since arriving in Germany. It's just the beginning of my language journey, as I'm continuing on to the A2 level next month, with the goal of reaching B1 proficiency by September.
 
 I'm grateful for this opportunity to develop my language skills, which will be crucial for my future academic and professional endeavors in Germany. It's amazing how much progress can happen in just a few months with dedicated practice and the right learning environment!`,
-        image: "/I1.jpg",
+        image: "/l1.png",
         date: "May 10, 2025",
         author: "Emanuele Guehi",
         category: "Education"

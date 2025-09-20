@@ -348,11 +348,11 @@ const About = () => {
                                     </div>
                                     <div>
                                         <div className="flex justify-between mb-1">
-                                            <span className="text-gray-300">German (Elementary A1)</span>
-                                            <span className="text-blue-400 text-sm">25%</span>
+                                            <span className="text-gray-300">German (B1 level )</span>
+                                            <span className="text-blue-400 text-sm">50%</span>
                                         </div>
                                         <div className="h-1.5 bg-gray-700 rounded-full overflow-hidden">
-                                            <div className="h-full bg-gradient-to-r from-blue-400 to-blue-600 w-1/4"></div>
+                                            <div className="h-full bg-gradient-to-r from-blue-400 to-blue-600 w-2/4"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -461,9 +461,15 @@ const About = () => {
                         {[
                             {
                                 year: '2025',
+                                title: 'Msc Engineering Physics',
+                                location: 'Carl von Ossietzky University of Oldenburg, Germany',
+                                desc: 'New Chapter unlocked, just Began my Masters degree in Engineering Physics...😁😁🎊🎊'
+                            },
+                            {
+                                year: '2025',
                                 title: 'DAAD Scholar, German Language Student',
                                 location: 'S + W Speak + Write gGmbh Sprachschule, Marburg, Germany',
-                                desc: 'A1.1 completed | Expected to reach B1 by September'
+                                desc: 'B1 completed 🎊 | September 2025'
                             },
                             {
                                 year: '2025',
