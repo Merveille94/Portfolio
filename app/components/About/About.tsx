@@ -203,7 +203,7 @@ const About = () => {
                                     and sustainable energy systems.&#34;
                                 </p>
                             </div>
-
+{/*vulnerability fix*/}
                             <div className="pt-6 flex flex-wrap gap-4">
                                 <motion.a
                                     href="/Emanuele_Merveille_Guehi_CV.pdf"
