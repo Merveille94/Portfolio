@@ -27,7 +27,7 @@ const About = () => {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-800 to-transparent"></div>
             <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-l from-blue-800 to-transparent"></div>
 
-            {/* Floating blue particles to be reviewed */}
+            {/* Floating blue particle to be reviewed */}
             <div className="absolute inset-0 overflow-hidden">
                 {[...Array(6)].map((_, i) => (
                     <motion.div
