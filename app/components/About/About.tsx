@@ -23,7 +23,7 @@ const About = () => {
                 <div className="grid-pattern w-full h-full"></div>
             </div>
 
-            {/* Animated blue accent lines */}
+            {/* Animated blue accent lines to be updated */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-800 to-transparent"></div>
             <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-l from-blue-800 to-transparent"></div>
 
