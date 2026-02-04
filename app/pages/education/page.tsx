@@ -1,12 +1,25 @@
-import React from 'react';
-import Education from "@/app/Education/Education";
+// import React from 'react';
+// import Education from "@/app/Education/Education";
+//
+// const Page = () => {
+//     return (
+//         <>
+//             <Education/>
+//         </>
+//     );
+// };
+//
+// export default Page;
 
-const Page = () => {
-    return (
-        <>
-            <Education/>
-        </>
-    );
+import { redirect } from "next/navigation";
+
+export default function Page() {
+    redirect("/");
+}
+
+export const metadata = {
+    robots: {
+        index: false,
+        follow: false,
+    },
 };
-
-export default Page;
