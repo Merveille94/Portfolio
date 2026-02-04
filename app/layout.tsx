@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     },
 };
 
+const MAINTENANCE_MODE = true; // change this to false for online revival
+
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
@@ -65,11 +67,18 @@ export default function RootLayout({
         </head>
 
 
+
         <body>
-        <Navbar />
+        {!MAINTENANCE_MODE && <Navbar />}
         {children}
-        <FooterWrapper />
+        {!MAINTENANCE_MODE && <FooterWrapper />}
         </body>
+
+        {/*<body>*/}
+        {/*<Navbar />*/}
+        {/*{children}*/}
+        {/*<FooterWrapper />*/}
+        {/*</body>*/}
         </html>
     );
 }
