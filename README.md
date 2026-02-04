@@ -1,5 +1,5 @@
 
-# 🌐 EMG Portfolio Website
+# 🌐 EMG Portfolio Website - will be updated soon 
 
 Welcome to my personal portfolio website! This project showcases my physics, energy engineering, and web development background. It highlights my professional experiences, academic journey, and creative side projects—from nuclear energy concepts to interactive web apps.
 
